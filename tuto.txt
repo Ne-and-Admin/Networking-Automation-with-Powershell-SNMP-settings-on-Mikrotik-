@@ -1,0 +1,8 @@
+/interface bridge add name=netadmin protocol=rstp
+/interface bridge port add bridge=netadmin interface=ether1
+/interface bridge port add bridge=netadmin interface=ether2
+/interface bridge port add bridge=netadmin interface=ether3
+/interface bridge port add bridge=netadmin interface=ether4
+/ip address add interface=netadmin address=192.168.1.2/24
+
+/system identity set name=Router12
